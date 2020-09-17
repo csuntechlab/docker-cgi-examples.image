@@ -1,0 +1,13 @@
+# This is a sample configuration file to allow the execution of the noop.cgi
+# program from with a docker container.
+
+
+ENVS[DOCKER_CGI_TEST]="Inserted as a test"
+HEADER[X-container-header]="Inserted as a test"
+
+
+ENTRY=emit-env.cgi
+CONTEXT=https://github.com/csuntechlab/cgi-examples.image
+
+
+

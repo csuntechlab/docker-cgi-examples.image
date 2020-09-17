@@ -1,0 +1,21 @@
+# This is a sample htaccess file to exemplify the ContainerCGI module
+
+# This configuration files provides the necessary directives allow access to a set of CGI programs
+
+# When the docker-cgi program is complete, the following URLs will access the associated CGI progamm within the docker container.
+
+# https://$HOSTNAME/~$USER/cgi-bin/noop.cgi
+# https://$HOSTNAME/~$USER/cgi-bin/echo-request.cgi
+# https://$HOSTNAME/~$USER/cgi-bin/emit-env.cgi
+# https://$HOSTNAME/~$USER/cgi-bin/here.cgi
+# https://$HOSTNAME/~$USER/cgi-bin/cat.cgi           
+
+DirectoryIndex index.html
+
+ContainerEngine docker
+
+ContainerCGI noop.cgi	      https://github.com/csuntechlab/cgi-examples.image
+ContainerCGI echo-request.cgi https://github.com/csuntechlab/cgi-examples.image
+ContainerCGI emit-env.cgi     https://github.com/csuntechlab/cgi-examples.image
+ContainerCGI here.cgi	      https://github.com/csuntechlab/cgi-examples.image
+ContainerCGI cat.cgi          https://github.com/csuntechlab/cgi-examples.image

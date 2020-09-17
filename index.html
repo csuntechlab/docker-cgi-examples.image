@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Collection of CGI Programs</title>
+  </head>
+  <body>
+    <h1>Overview</h1>
+    This repository contains a collection of simple CGI files.  The two main purposes of this repositiory are:
+    <ul>
+      <li>To provide a set of CGI programs to illustrate the CGI
+	protocol.<br>
+	Because of their simplicity, they are easier to
+	understand.  These programs can also be used to validate a
+	user's enviornment.  It is expect that this programs will be
+	installed on a simple webserver that supports generic CGI
+	programs.</li>
+
+      <li>To provide the specification of a simple docker image.<br>
+      The resulting container will include each of these CGI programs. Then
+      these CGI programs can be used to validate and demonstrate the
+      function of the <a href="https://github.com/csuntechlab/docker-cgi">docker-cgi project</a>.
+      </li>
+    </ul>
+    
+
+    <h1>Directory of CGI Files</h1>
+    <ul>
+      <li><a href="noop.cgi">noop.cgi</a>: The most trivial of all CGI programs, it does nothing.</li>
+      <li><a href="echo-request.cgi">echo-request.cgi</a>: A CGI program that emits the components of the query string and the request body.
+      <li><a href="emit-env.cgi">emit-env.cgi</a>: A CGI program the emits the environment variables defined by the CGI protocol.
+      <li><a href="here.cgi">here.cgi</a>: A CGI program that emits simple HTML document contained within a here document.
+      <li><a href="cat.cgi">cat.cgi</a>: A CGI program "cat"s a file based upon the query string.<br>
+	E.g., the "<a href="cat.cgi?cat.cgi">cat.cgi?cat.cgi</a>" "cat"s out the "cat.cgi" program.
+    </ul>
+
+    <h1>Source of CGI Files</h1>
+    <ul>
+      <li>noop.cgi: Source via <a href="cat.cgi?noop.cgi">cat.cgi?noop.cgi</a>
+      <li>echo-request.cgi: Source via <a href="cat.cgi?echo-request.cgi">cat.cgi?echo-request.cgi</a>
+      <li>emit-env.cgi: Source via <a href="cat.cgi?emit-env.cgi">cat.cgi?emit-env.cgi</a>
+      <li>here.cgi: Source via <a href="cat.cgi?here.cgi">cat.cgi?here.cgi</a>
+      <li>cat.cgi: Source via <a href="cat.cgi?cat.cgi">cat.cgi?cat.cgi</a>
+    </ul>
+
+    <h1>Container-based Access</h1>
+
+    <div>
+      <p>Each of the above CGI programs have also been placed into a
+	docker container. These CGI programs are made available by use of
+	the <a jref="https://github.com/csuntechlab/docker-cgi">docker-cgi
+	  project.</a>
+
+      <p>
+	The specification of the docker image is provided by this <a href="dockerfile">dockerfile</a>.
+      </p>
+	
+      <p>Given the current state of this project, an Apache Handler is
+	used to access these programs. This handler is invoked for any
+	file with the extension of ".docker-cgi".  <br>
+	
+	<h2>Individual Configuration Files for each of the CGI programs</h2>
+	<ul>
+	  <li><a href="noop.docker-cgi">noop.docker-cgi</a></li>
+	  <li><a href="echo-request.docker-cgi">echo-request.docker-cgi</a></li>
+	  <li><a href="emit-env.docker-cgi">emit-env.docker-cgi</a></li>
+	  <li><a href="here.docker-cgi">here.docker-cgi</a></li>
+	  <li><a href="cat.docker-cgi">cat.docker-cgi<a></li>
+	</ul>
+	
+	<h2>HTAccess Configuration File under the completed "docker-cgi" project.</h2>
+	  <ul>
+	    <li><a href="htaccess">htaccess</a></li>
+	  </ul>
+    </div>
+    
+</html>
+
+
