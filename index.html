@@ -26,7 +26,8 @@
     <ul>
       <li><a href="noop.cgi">noop.cgi</a>: The most trivial of all CGI programs, it does nothing.</li>
       <li><a href="echo-request.cgi">echo-request.cgi</a>: A CGI program that emits the components of the query string and the request body.
-      <li><a href="emit-env.cgi">emit-env.cgi</a>: A CGI program the emits the environment variables defined by the CGI protocol.
+      <li><a href="emit-cgi-env.cgi">emit-cgi-env.cgi</a>: A CGI program the emits the environment variables defined by the CGI protocol.
+      <li><a href="emit-env.cgi">emit-env.cgi</a>: A CGI program the emits the environment variables provided by the Web-server, including the CGI variables.
       <li><a href="here.cgi">here.cgi</a>: A CGI program that emits simple HTML document contained within a here document.
       <li><a href="cat.cgi">cat.cgi</a>: A CGI program "cat"s a file based upon the query string.<br>
 	E.g., the "<a href="cat.cgi?cat.cgi">cat.cgi?cat.cgi</a>" "cat"s out the "cat.cgi" program.
@@ -37,6 +38,7 @@
       <li>noop.cgi: Source via <a href="cat.cgi?noop.cgi">cat.cgi?noop.cgi</a>
       <li>echo-request.cgi: Source via <a href="cat.cgi?echo-request.cgi">cat.cgi?echo-request.cgi</a>
       <li>emit-env.cgi: Source via <a href="cat.cgi?emit-env.cgi">cat.cgi?emit-env.cgi</a>
+      <li>emit-cgi-env.cgi: Source via <a href="cat.cgi?emit-cgi-env.cgi">cat.cgi?emit-cgi-env.cgi</a>
       <li>here.cgi: Source via <a href="cat.cgi?here.cgi">cat.cgi?here.cgi</a>
       <li>cat.cgi: Source via <a href="cat.cgi?cat.cgi">cat.cgi?cat.cgi</a>
     </ul>
