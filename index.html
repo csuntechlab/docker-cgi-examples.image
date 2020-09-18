@@ -47,7 +47,7 @@
 
     <div>
       <p>Each of the above CGI programs have also been placed into a
-	docker container. These CGI programs are made available by use of
+	docker container. These CGI programs are made available via =
 	the <a jref="https://github.com/csuntechlab/docker-cgi">docker-cgi
 	  project.</a>
 
@@ -57,9 +57,11 @@
 	
       <p>Given the current state of this project, an Apache Handler is
 	used to access these programs. This handler is invoked for any
-	file with the extension of ".docker-cgi".  <br>
-	
-	<h2>Individual Configuration Files for each of the CGI programs</h2>
+	file with the extension of ".docker-cgi".
+
+	<br>
+
+	<h2>Configuration Files for each of the CGI programs</h2>
 	<ul>
 	  <li><a href="noop.docker-cgi">noop.docker-cgi</a></li>
 	  <li><a href="echo-request.docker-cgi">echo-request.docker-cgi</a></li>
@@ -67,10 +69,12 @@
 	  <li><a href="here.docker-cgi">here.docker-cgi</a></li>
 	  <li><a href="cat.docker-cgi">cat.docker-cgi<a></li>
 	</ul>
+
 	
-	<h2>HTAccess Configuration File under the completed "docker-cgi" project.</h2>
+	<h2>HTAccess Configuration File</h2>
 	  <ul>
-	    <li><a href="htaccess">htaccess</a></li>
+	    <li><a href="htaccess.docker-cgi">htaccess.docker-cgi</a>: For use as the ".htaccess" file when using docker-cgi as a handler</li>
+    	    <li><a href="htaccess.final">htaccess.final</a>: For use as the ".htaccess" file when docker-cgi is used under the ContainerCGI module</li>
 	  </ul>
     </div>
     
