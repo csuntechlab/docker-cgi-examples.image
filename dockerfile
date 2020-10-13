@@ -1,6 +1,5 @@
 FROM ubuntu
 
-# Cleaning up  
 RUN apt-get clean && apt-get autoremove
 
 LABEL project=docker-cgi
@@ -8,7 +7,7 @@ LABEL organization="AdvancingTechnology Laboratory (@dvancingTech) at CSUN"
 LABEL image="Example Image for CGI programs"
 LABEL version="0.1"
 LABEL description="The image contains a suite of simple CGI programs that can be executed within a container on a webserver."
-LABEL maintainer="Steven.Fitgerald@csun.edu"
+LABEL maintainer="Steven.Fitzgerald@csun.edu"
 
 RUN mkdir /docker-cgi
 ENV PATH="/docker-cgi:$PATH"
