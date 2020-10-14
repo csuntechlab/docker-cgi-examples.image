@@ -7,7 +7,7 @@ HEADER[X-container-header]="Inserted as a test"
 
 
 ENTRY=noop.cgi
-CONTEXT=https://github.com/csuntechlab/docker-cgi.examples
+CONTEXT=https://github.com/csuntechlab/docker-cgi.examples.git
 
 
 
