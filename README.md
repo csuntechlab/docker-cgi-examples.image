@@ -1,7 +1,7 @@
 # Project Name: docker-cgi.examples
 
 # Description:
-Contained, herein, is a set of CGI (Common Gateway Inteface) programs that have been created as simple examples and as test cases. These programs have been used to support a number of other projects (see the Related Links section).  In addition to these CGI programs, there is a corresponding set of configuration files (*.docker.cgi) to be used in conjunction the [docker-CGI](https://github.com/csuntechlab/docker-cgi) project.
+Contained, herein, is a set of CGI (Common Gateway Inteface) programs that have been created as simple examples and as test cases. These programs have been used to support a number of other projects (see the Related Links section).  In addition to these CGI programs, there is a corresponding set of configuration files (*.docker-cgi) to be used in conjunction the [docker-CGI](https://github.com/csuntechlab/docker-cgi) project.
 
 #### The docker-cgi project is an Apache Hander that executes CGI programs within a docker container.
 
