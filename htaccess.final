@@ -14,8 +14,8 @@ DirectoryIndex index.html
 
 ContainerEngine docker
 
-ContainerCGI noop.cgi	      https://github.com/csuntechlab/docker-cgi.examples
-ContainerCGI echo-request.cgi https://github.com/csuntechlab/docker-cgi.examples
-ContainerCGI emit-env.cgi     https://github.com/csuntechlab/docker-cgi.examples
-ContainerCGI here.cgi	      https://github.com/csuntechlab/docker-cgi.examples
-ContainerCGI cat.cgi          https://github.com/csuntechlab/docker-cgi.examples
+ContainerCGI noop.cgi	      https://github.com/csuntechlab/docker-cgi.examples.git
+ContainerCGI echo-request.cgi https://github.com/csuntechlab/docker-cgi.examples.git
+ContainerCGI emit-env.cgi     https://github.com/csuntechlab/docker-cgi.examples.git
+ContainerCGI here.cgi	      https://github.com/csuntechlab/docker-cgi.examples.git
+ContainerCGI cat.cgi          https://github.com/csuntechlab/docker-cgi.examples.git
