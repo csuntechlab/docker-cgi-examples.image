@@ -15,6 +15,7 @@ ENV PATH="/docker-cgi:$PATH"
 COPY noop.cgi		/docker-cgi/
 COPY echo-request.cgi	/docker-cgi/
 COPY emit-env.cgi	/docker-cgi/
+COPY emit-cgi-env.cgi	/docker-cgi/
 COPY here.cgi		/docker-cgi/
 COPY cat.cgi		/docker-cgi/
 
